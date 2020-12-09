@@ -1,0 +1,53 @@
+.house-box {
+  margin: 0;
+  padding: 0;
+}
+
+.house {
+  position: relative;
+  width: auto;
+  height: 220rpx;
+  background: #fff;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: #cccccc 0 2rpx 2rpx 2rpx;
+  overflow: hidden;
+}
+
+.house-hover-class {
+  background: rgba(179, 172, 172, 0);
+}
+
+.house-tilte {
+  font-weight: bold;
+  font-size: 34rpx;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.cut-off {
+  position: absolute;
+  width: 200rpx;
+  height: 20rpx;
+  background-color: rgb(39, 182, 239);
+  opacity: 0.3;
+  transform: skew(-45deg);
+  margin-top: 22rpx;
+}
+
+.house-info {
+  padding-top: 15rpx;
+  color: #5c5c5c;
+  font-size: 25rpx;
+}
+
+.house-capacity {
+  float: right;
+  font-size: 22rpx;
+  color: #5c5c5c;
+  padding-top: 25rpx;
+}

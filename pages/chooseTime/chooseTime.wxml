@@ -1,0 +1,29 @@
+<view class="head-box">
+  <view class="space"></view>
+  <view class="space"></view>
+  <view class="space"></view>
+  <view class="space"></view>
+  <view class="title"> {{house.name}}预约 </view>
+  <view class="section">
+    <picker bindchange="bindDayChange" value="{{index}}" range="{{dayArr}}">
+      <view class="picker">
+        可选日期：<text class="choose">{{dayArr[dayIndex]}}</text>
+      </view>
+    </picker>
+    <view class="space"></view>
+  </view>
+</view>
+
+<scroll-view class="time-quantums-view" scroll-y="true">
+  <block wx:for="{{timeQuantums}}" wx:key="*this">
+    <view class="space"></view>
+    <view class="time-quantum" style="background-color:{{item.remainingPlaces===0?'lightgrey':'white'}}"
+      hover-class="time-quantum-hover-class" data-index="{{index}}">
+      <view class="t-title">{{item.startTime}} ~ {{item.endTime}}</view>
+      <text class="t-left">总容量: {{item.capacity}}</text>
+      <text class="t-right">剩余: {{item.remainingPlaces}}</text>
+    </view>
+    
+    <view class="space"></view>
+  </block>
+</scroll-view>

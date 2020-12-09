@@ -1,0 +1,50 @@
+<view class="head-box">
+  <view class="space"></view>
+  <view class="space"></view>
+  <view class="title"> {{house.name}}预约 </view>
+  <view class="section">
+    <picker class="choose-day" bindchange="handleDayChange" value="{{index}}" range="{{dayArr}}">
+      <view class="picker-day">
+        可选日期：<text class="choose-day-text">{{dayArr[indexOfDay]}}</text>
+      </view>
+    </picker>
+    <view class="line"></view>
+    <view class="filtrate">
+      <!-- 下拉框开始 -->
+      <view class='select_box'>
+        <view class='select' catchtap='selectTap'>
+          <text class='select_text'>{{filterConditionArr[indexOfCondition]}}</text>
+          <image class='select_img {{show&&"select_img_rotate"}}' src='../../images/down_arrow.png'></image>
+        </view>
+        <view class='option_box'
+          style="height:{{show?(filterConditionArr.length>5?300:filterConditionArr.length*60):0}}rpx; border-color:{{show?'#efefef':'white'}};">
+          <text class='option' style='{{index==filterConditionArr.length-1&&"border:0;"}}'
+            wx:for='{{filterConditionArr}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+        </view>
+      </view>
+      <!-- 下拉框结束 -->
+      <picker class="piker-more" bindchange="bindSiteOrTimeQuantumChange" value="{{index}}"
+        range="{{siteOrTimeQuantumArr}}">
+        <view class="choose-more" hidden="{{indexOfCondition===0}}">
+          {{indexOfCondition===2?siteOrTimeQuantumArr[indexOfSiteOrTimeQuantum][0]+'~'+siteOrTimeQuantumArr[indexOfSiteOrTimeQuantum][1]:siteOrTimeQuantumArr[indexOfSiteOrTimeQuantum]}}
+        </view>
+      </picker>
+    </view>
+    <view class="space"></view>
+  </view>
+</view>
+
+<scroll-view class="booking-options-view" scroll-y="true">
+  <block wx:for="{{bookingOptionArrToShow}}" wx:key="*this">
+    <view class="space"></view>
+    <view class="booking-option" hover-class="booking-option-hover-class"
+      style="background-color:{{item.remainingPlaces===0?'lightgrey':'none'}}" hover-stay-time="300"
+      data-index="{{index}}" bindtap="book">
+      <view class="t-title">{{item.startTime}} ~ {{item.endTime}}</view>
+      <view class="t-title">{{item.site}}</view>
+      <text class="t-left">总容量: {{item.capacity}}</text>
+      <text class="t-right">剩余: {{item.remainingPlaces}}</text>
+    </view>
+    <view class="space"></view>
+  </block>
+</scroll-view>

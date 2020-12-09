@@ -1,0 +1,12 @@
+<view class="house-box">
+  <block wx:for="{{houses}}" wx:key="name">
+    <view class="space"></view>
+    <view class="house" hover-class="house-hover-class" hover-stay-time="300" data-index="{{index}}" bindtap="choosed">
+      <view class="cut-off"></view>
+      <view class="house-tilte">{{item.name}}</view>
+      <text class="house-info">{{item.info}}</text>
+      <view class="house-capacity">最大容量: {{item.capacity}}</view>
+    </view>
+    <view class="space"></view>
+  </block>
+</view>

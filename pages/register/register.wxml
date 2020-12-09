@@ -1,0 +1,40 @@
+<view class="container">
+
+  <view class="register-icon">
+    <image class="register-img" src="../../images/user-bg.jpg"></image>
+  </view>
+
+  <view class="register-from">
+    <view class="inputView">
+      <image class="nameImage" src="../../images/id.png"></image>
+      <label class="registerLab">设置账号</label>
+      <input class="inputText" value="{{id}}" placeholder="请输入账号" data-name="id" bindinput="handleInput"
+        bindconfirm="handleRegister" type="number"></input>
+    </view>
+
+    <view class="inputView">
+      <image class="nameImage" src="../../images/name.png"></image>
+      <label class="registerLab">设置姓名</label>
+      <input class="inputText" value="{{name}}" placeholder="请输入姓名" data-name="name" bindinput="handleInput"
+        bindconfirm="handleRegister" type="text"></input>
+    </view>
+
+    <view class="inputView">
+      <image class="keyImage" src="../../images/key.png"></image>
+      <label class="registerLab">设置密码</label>
+      <input class="inputText" value="{{password}}" placeholder="请输入密码" data-name="password"
+        bindinput="handleInput" bindconfirm="handleRegister" password></input>
+    </view>
+
+    <view class="inputView">
+      <image class="keyImage" src="../../images/_key.png"></image>
+      <label class="registerLab">确认密码</label>
+      <input class="inputText" value="{{_password}}" placeholder="再次输入密码" data-name="_password"
+        bindinput="handleInput" bindconfirm="handleRegister" password></input>
+    </view>
+
+    <view class="registerBtnView">
+      <button class="registerBtn" type="primary" bindtap="handleRegister">注册</button>
+    </view>
+  </view>
+</view>

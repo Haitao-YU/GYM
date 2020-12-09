@@ -1,0 +1,31 @@
+<view class="head-box" bindtap="tapToLogin">
+  <image mode="scaleToFill" src="../../images/user-bg.jpg"></image>
+  <view class="head-info">
+    <image mode="scaleToFill" src="{{headImage}}"></image>
+    <view class="info-name">{{user.name===null?'点 击 登 录 !':user.name}}</view>
+    <view class="info-id">{{user.id===null?'':'学号：'+user.id}}</view>
+  </view>
+</view>
+
+<view class="meun-box">
+  <navigator url="../myAppointment/myAppointment">
+    <view class="menu-item">
+      <view class="l">我的预约</view>
+      <image class="r" src="../../icons/next.png"></image>
+    </view>
+  </navigator>
+  <view class="line"></view>
+  <navigator url="../myAppointment/myAppointment">
+    <view class="menu-item">
+      <view class="l">修改绑定手机</view>
+      <image class="r" src="../../icons/next.png"></image>
+    </view>
+  </navigator>
+  <view class="space"></view>
+  <view class="line"></view>
+  <navigator url="../user/user">
+    <view class="menu-item" bindtap="logout">
+      <view class="l">退出登录</view>
+    </view>
+  </navigator>
+</view>

@@ -1,0 +1,74 @@
+.head-box {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.head-box image {
+  width: 750rpx;
+  height: 500rpx;
+}
+
+.head-info image {
+  position: absolute;
+  top: 200rpx;
+  left: 80rpx;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3),
+    0px 0px 20px rgba(0, 0, 0, 0.1) inset;
+}
+
+.head-info .info-name {
+  position: absolute;
+  top: 240rpx;
+  left: 380rpx;
+  font-size: 50rpx;
+  font-weight: bold;
+  color: white;
+}
+
+.head-info .info-id {
+  position: absolute;
+  top: 320rpx;
+  left: 380rpx;
+  font-size: 35rpx;
+  font-weight: bold;
+  color: white;
+}
+
+.meun-box {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.menu-item {
+  width: 750rpx;
+  height: 104rpx;
+  padding: 0 32rpx;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item .l {
+  font-size: 34rpx;
+  color: #333;
+  line-height: 104rpx;
+}
+
+.menu-item .r {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.menu-item button {
+  position: relative;
+  float: left;
+  width: 750rpx;
+  height: 100%;
+  background: #fff;
+}

@@ -1,0 +1,68 @@
+@import "../../lib/weui.wxss";
+
+.head-box {
+  position: relative;
+  height: 30%;
+}
+
+.title {
+  padding-top: 30rpx;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50rpx;
+  text-align: center;
+}
+
+.section {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.picker {
+  padding: 26rpx;
+  background-color: #FFFFFF;
+}
+
+.choose {
+  float: right;
+  padding-right: 50rpx;
+}
+
+.time-quantums-view {
+  width: 100%;
+  height: 70%;
+}
+
+.time-quantum {
+  position: relative;
+  width: auto;
+  height: auto;
+  background: #fff;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: #cccccc 0 2rpx 2rpx 2rpx;
+  overflow: hidden;
+}
+
+.time-quantum .t-title {
+  font-size: 35rpx;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+.time-quantum .t-left {
+  font-size: 30rpx;
+  color: #777;
+  float: left;
+}
+
+.time-quantum .t-right {
+  font-size: 30rpx;
+  color: #777;
+  float: right;
+}

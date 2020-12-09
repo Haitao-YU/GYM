@@ -1,0 +1,50 @@
+{
+  "entryPagePath": "pages/chooseTimeAndSite/chooseTimeAndSite",
+  "pages": [
+    "pages/index/index",
+    "pages/book/book",
+    "pages/user/user",
+    "pages/login/login",
+    "pages/auth/auth",
+    "pages/register/register",
+    "pages/findPassword/findPassword",
+    "pages/myAppointment/myAppointment",
+    "pages/chooseTime/chooseTime",
+    "pages/chooseTimeAndSite/chooseTimeAndSite"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "吉林大学宋治平体育馆",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ff2d4a",
+    "backgroundColor": "#fafafa",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/home.png",
+        "selectedIconPath": "icons/home-o.png"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "预约",
+        "iconPath": "icons/category.png",
+        "selectedIconPath": "icons/category-o.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "icons/user.png",
+        "selectedIconPath": "icons/user-o.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

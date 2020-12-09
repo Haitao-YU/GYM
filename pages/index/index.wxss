@@ -1,0 +1,10 @@
+.index_swiper swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+
+.index_swiper swiper image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,34 @@
+<view class="container">
+
+  <view class="login-icon">
+    <image class="login-img" src="../../images/user-bg.jpg"></image>
+  </view>
+
+  <view class="login-from">
+
+    <view class="inputView">
+      <image class="nameImage" src="../../images/id.png"></image>
+      <label class="loginLab">账号</label>
+      <input class="inputText" value="{{id}}" placeholder="请输入账号" data-name="id" bindinput="handleInput" bindconfirm="handleLogin"
+        type="number"></input>
+    </view>
+
+    <view class="inputView">
+      <image class="keyImage" src="../../images/key.png"></image>
+      <label class="loginLab">密码</label>
+      <input class="inputText" value="{{password}}" placeholder="请输入密码" data-name="password" bindinput="handleInput"
+        bindconfirm="handleLogin" password></input>
+    </view>
+
+    <view class="functionLabelView">
+      <label class="functionLabel" bindtap="tapToRegister">注册账号</label>
+      <label class="functionLabel" bindtap="tapToFindPassword">找回密码</label>
+    </view>
+
+    <view class="loginBtnView">
+      <button class="loginBtn" type="primary" bindtap="handleLogin">登录</button>
+    </view>
+
+  </view>
+
+</view>
